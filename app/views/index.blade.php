@@ -66,12 +66,14 @@
 
             <!-- Begin page content -->
             <div class="container">
+                 @include('elements.alert')
                 <div class="jumbotron">
                     <h2>FindPhone</h2>
                     <p>Key in the phone number and find the owner details. Simple as 1,2,3....</p>
+                   
                     <form action="" method="POST">
                         <div class="input-group">
-                            <input type="text" name="input" class="form-control">
+                            {{ Form::text('input', null, array('placeholder'=>'Telephone Number', 'class' => 'form-control')) }}
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="submit">Search!</button>
                             </span>
