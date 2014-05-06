@@ -1,7 +1,7 @@
 {
     "name": "itsaafrin/findphone",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": ["framework", "laravel", "sample_app"],
     "license": "MIT",
     "require": {
         "laravel/framework": "4.1.*",
