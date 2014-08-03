@@ -1,21 +1,23 @@
 <?php
 
-class Search extends BaseController {
-
+class Search extends BaseController
+{
     public $rules = array(
         'postSearch' => array(
             'input' => 'Required|integer'
         )
     );
 
-    public function getSearch() {
+    public function getSearch()
+    {
         $data['stats'] = DB::table('phonedb')->count();
         $data['results'] = "";
+
         return View::make('index', $data);
     }
 
-    public function postSearch() {
-
+    public function postSearch()
+    {
         $v = Validator::make(Input::all(), $this->rules['postSearch']);
 
         if ($v->passes()) {

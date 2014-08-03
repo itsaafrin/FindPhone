@@ -11,7 +11,7 @@
   |
  */
 //
-Route::get('/', function() {
+Route::get('/', function () {
     return Redirect::to('/search');
 });
 
@@ -20,6 +20,6 @@ Route::get('/search', array('uses' => 'Search@getSearch'));
 Route::post('/search', array('uses' => 'Search@postSearch'));
 
 //API Routes
-Route::group(array('prefix' => 'api/v1', 'before' => ''), function() {
+Route::group(array('prefix' => 'api/v1', 'before' => ''), function () {
     Route::get('/find/{input}', array('uses' => 'API@getResult'));
 });

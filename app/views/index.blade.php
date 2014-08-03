@@ -13,10 +13,8 @@
         <!-- Bootstrap core CSS -->
         {{ HTML::style('assests/css/bootstrap.min.css') }}
 
-
         <!-- Custom styles for this template -->
         {{ HTML::style('assests/css/custom.css') }}
-
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -70,7 +68,7 @@
                 <div class="jumbotron">
                     <h2>FindPhone</h2>
                     <p>Key in the phone number and find the owner details. Simple as 1,2,3....</p>
-                   
+
                     <form action="" method="POST">
                         <div class="input-group">
                             {{ Form::text('input', null, array('placeholder'=>'Telephone Number', 'class' => 'form-control')) }}
@@ -99,7 +97,6 @@
                 <p class="text-muted">FindPhone &copy; 2014</p>
             </div>
         </div>
-
 
         <!-- Bootstrap core JavaScript
         ================================================== -->

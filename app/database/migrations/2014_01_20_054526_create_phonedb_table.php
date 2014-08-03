@@ -3,15 +3,16 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePhonedbTable extends Migration {
-
+class CreatePhonedbTable extends Migration
+{
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up() {
-        Schema::create('phonedb', function(Blueprint $table) {
+    public function up()
+    {
+        Schema::create('phonedb', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->string('name', 30);
             $table->integer('social_security')->nullable();
@@ -27,7 +28,8 @@ class CreatePhonedbTable extends Migration {
      *
      * @return void
      */
-    public function down() {
+    public function down()
+    {
         Schema::drop('phonedb');
     }
 
