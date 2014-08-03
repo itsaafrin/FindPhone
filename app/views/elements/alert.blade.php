@@ -5,7 +5,6 @@
 </div>
 @endif
 
-
 @if($errors->all())
 @foreach($errors->all() as $error)
 <div class="alert alert-danger">
@@ -14,4 +13,3 @@
 </div>
 @endforeach
 @endif
-
